@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import './partials/header';
+@import './partials/typography';
+@import './partials/home';
+@import './partials/buttons-default';
+@import './partials/section-project';
+@import './partials/animations';
+@import './partials/section-skills';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1920px;
+    width: 100%;
+    background-color: #060112;
+    border: 3px solid red;
+}

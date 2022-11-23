@@ -1,0 +1,137 @@
+
+// animation of project section icons
+@keyframes react1 {
+  from {
+    opacity: 1;
+    color: #61dafb;
+  }
+  to {
+    opacity: 0.6;
+    color: #303030;
+  }
+}
+
+@keyframes js1 {
+  from {
+    opacity: 1;
+    color: #f0db4f;
+  }
+  to {
+    opacity: 0.6;
+    color: #303030;
+  }
+}
+
+@keyframes css1 {
+  from {
+    opacity: 1;
+    color: #1572b6;
+  }
+  to {
+    opacity: 0.6;
+    color: #303030;
+  }
+}
+
+@keyframes sass1 {
+  from {
+    opacity: 1;
+    color: #cb6699;
+  }
+  to {
+    opacity: 0.6;
+    color: #303030;
+  }
+}
+@keyframes aws1 {
+  from {
+    opacity: 1;
+    color: #f7a80d;
+  }
+  to {
+    opacity: 0.6;
+    color: #303030;
+  }
+}
+
+.react {
+  animation: react1 3s ease-in-out 0.5s infinite alternate;
+}
+.js {
+  animation: js1 3s ease-in-out 1s infinite alternate;
+}
+.css {
+  animation: css1 3s ease-in-out 2s infinite alternate;
+}
+.sass {
+  animation: sass1 3s ease-in-out 3.2s infinite alternate;
+}
+.aws {
+  animation: aws1 3s ease-in-out 4.2s infinite alternate;
+}
+
+//animation of skill section 
+.acende-e-apaga-fundo {
+  opacity: 0.2;
+  animation: acende-e-apaga-fundo 1s linear infinite alternate;
+}
+
+.layer-sobe-e-desce {
+  opacity: 0.1;
+  transform: translateY(0);
+  animation: layer-sobe-e-desce 2s linear infinite forwards;
+}
+
+.anime-stroke {
+  stroke: #d9d9db;
+  stroke-dashoffset: 0.2 20;
+  stroke-dasharray: 10;
+  animation: anime-stroke 6s linear infinite alternate-reverse;
+}
+
+.btn-center-bluor {
+  animation: acende-e-apaga-fundo 2s ease infinite alternate;
+}
+
+.layer-01-skills {
+  opacity: 0;
+}
+
+.layer-02-skills {
+  opacity: 0;
+}
+
+
+@keyframes layer-sobe-e-desce {
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-70px);
+    opacity: 0.1;
+  }
+}
+
+@keyframes acende-e-apaga-fundo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anime-stroke {
+  from {
+    stroke-dashoffset: 0.8 20;
+    stroke-dasharray: 10;
+  }
+  to {
+    stroke-dashoffset: 20 1;
+    stroke-dasharray: 80;
+  }
+}

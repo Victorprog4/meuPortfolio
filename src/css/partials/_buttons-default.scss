@@ -1,0 +1,59 @@
+.--button-primary {
+  background: linear-gradient(263.03deg, #2c28ff 19.65%, #100da6 100.89%);
+  transition: 0.5s;
+  border: none;
+  padding: 0.8rem 3.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ebebeb;
+    opacity: 0.7;
+    transition: 0.5s;
+
+    i {
+      margin-left: 16px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 30px #120fbb;
+    transform: scale(1.02);
+    a {
+      opacity: 1;
+    }
+  }
+}
+
+.--button-secundary {
+  background: transparent;
+  border: 5px solid #100da6;
+  transition: 0.5s;
+  padding: 0.6rem 2.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ebebeb;
+    opacity: 0.7;
+    transition: 0.5s;
+
+    i {
+      margin-left: 16px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 30px #120fbb;
+    transform: scale(1.02);
+    a {
+      opacity: 1;
+    }
+  }
+}

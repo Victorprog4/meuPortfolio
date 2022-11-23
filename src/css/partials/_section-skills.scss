@@ -1,0 +1,36 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //position: relative;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  padding: 0 84px;
+  margin: 12rem 0;
+  border: 5px solid rgb(7, 255, 102);
+  background-color: #060112;
+
+  h1 {
+    font-size: 64px;
+    text-align: center;
+    color: white;
+    margin: 3.2rem 0;
+    font-weight: 600;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 1400px;
+    width: 100%;
+
+    h1 {
+      font-size: 56px;
+      margin: 2.8rem 0;
+    }
+    .img-skills {
+      max-width: 1300px;
+        width: 100%;
+    }
+  }
+}
