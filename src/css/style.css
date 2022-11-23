@@ -242,6 +242,9 @@ h4, a, span, p {
   .projects .describe-project p {
     font-size: 20px;
   }
+  .projects .describe-project button {
+    margin: 3.2rem 0 0 1.4rem;
+  }
 }
 
 @-webkit-keyframes react1 {
