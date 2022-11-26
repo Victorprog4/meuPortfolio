@@ -11,7 +11,7 @@
   height: 88px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 144px;
+  padding: 0 9rem;
 }
 #header #nav-links {
   list-style: none;
@@ -26,10 +26,10 @@
   transition: 0.5s ease-in;
 }
 #header #nav-links a::after {
-  content: " ";
+  content: "";
   width: 0;
   height: 3px;
-  border-radius: 15px;
+  border-radius: 1rem;
   background: linear-gradient(90deg, #020082 12.56%, #2b27ed 100%);
   position: absolute;
   bottom: -4px;
@@ -44,7 +44,10 @@
 }
 @media (max-width: 1440px) {
   #header {
-    padding: 0 84px;
+    padding: 0 5.25rem;
+  }
+  #header #nav-links a {
+    font-size: 1.25em;
   }
 }
 
@@ -59,11 +62,11 @@ h4, a, span, p {
 .home {
   display: flex;
   width: 100%;
-  height: 800px;
-  padding: 0 144px;
+  height: 100%;
+  padding: 4rem 9rem;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4.8rem;
+  margin: 4.8rem 0;
 }
 .home h1 {
   font-size: 4em;
@@ -82,27 +85,25 @@ h4, a, span, p {
   margin-top: 4.8rem;
 }
 .home .home-image {
-  width: 37.5rem;
+  width: 31.87rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
 @media (max-width: 1440px) {
   .home {
-    padding: 0 84px;
+    padding: 2rem 9rem;
   }
   .home h1 {
-    font-size: 3.5em;
+    font-size: 3.2em;
     line-height: 100%;
   }
   .home h4 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .home .home-itens button {
     margin-right: 1.2rem;
-  }
-  .home .home-image {
-    width: 50%;
   }
 }
 
@@ -110,8 +111,8 @@ h4, a, span, p {
   background: linear-gradient(263.03deg, #2c28ff 19.65%, #100da6 100.89%);
   transition: 0.5s;
   border: none;
-  padding: 0.8rem 3.4rem;
-  border-radius: 6px;
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.37rem;
   cursor: pointer;
 }
 .--button-primary a {
@@ -123,7 +124,7 @@ h4, a, span, p {
   transition: 0.5s;
 }
 .--button-primary a i {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 .--button-primary:hover {
   box-shadow: 1px 1px 30px #120fbb;
@@ -135,22 +136,22 @@ h4, a, span, p {
 
 .--button-secundary {
   background: transparent;
-  border: 5px solid #100da6;
+  border: 3px solid #100da6;
   transition: 0.5s;
-  padding: 0.6rem 2.6rem;
-  border-radius: 6px;
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.37rem;
   cursor: pointer;
 }
 .--button-secundary a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 400;
   color: #ebebeb;
   opacity: 0.7;
   transition: 0.5s;
 }
 .--button-secundary a i {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 .--button-secundary:hover {
   box-shadow: 1px 1px 30px #120fbb;
@@ -164,31 +165,25 @@ h4, a, span, p {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  top: 1.2rem;
+  top: 1.8rem;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  padding: 0 144px;
+  padding: 0 9rem;
 }
 .projects .describe-project {
   background-color: #060112;
+  box-shadow: 0px -12px 48px #060112;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 100%;
   width: 50%;
 }
-.projects .describe-project h2 {
-  font-size: 4em;
-  color: white;
-  line-height: 108%;
-  text-align: left;
-  margin: 1.2rem 0;
-}
 .projects .describe-project h4 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: white;
   line-height: 108%;
   text-align: center;
@@ -234,14 +229,11 @@ h4, a, span, p {
   .projects {
     padding: 0 84px;
   }
-  .projects .describe-project h2 {
-    font-size: 3.5em;
-  }
   .projects .describe-project h4 {
-    font-size: 1.62em;
+    font-size: 2em;
   }
   .projects .describe-project p {
-    font-size: 1.25em;
+    font-size: 0.9em;
   }
   .projects .describe-project button {
     margin: 3rem 0 0 1.4rem;
@@ -491,18 +483,68 @@ h4, a, span, p {
   font-weight: 600;
 }
 @media (max-width: 1440px) {
-  .skills {
-    max-width: 1400px;
-    width: 100%;
-  }
   .skills h1 {
     font-size: 3.5em;
-    margin: 2.8rem 0;
+    margin: 1.2rem 0;
   }
   .skills .img-skills {
-    max-width: 1300px;
+    max-width: 1000px;
     width: 100%;
   }
+}
+
+.about-me {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9rem;
+  margin: 4.8rem 0;
+  border: 1px solid red;
+}
+.about-me .photo {
+  width: 100%;
+  justify-content: flex-start;
+  border: 1px solid rgb(30, 0, 255);
+}
+.about-me .my-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgb(30, 255, 0);
+}
+.about-me .my-description p {
+  font-size: 1em;
+  letter-spacing: 0.08rem;
+  text-align: right;
+  color: white;
+}
+.about-me .my-description div {
+  margin-top: 2.8rem;
+  display: flex;
+  justify-content: end;
+}
+.about-me .my-description div button {
+  padding: 0.4rem 1.2rem;
+}
+
+#footer {
+  width: 100%;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  border-top: 1px solid #777777;
+  background-color: #060112;
+  box-shadow: 0px -65px 98px 5px #060112;
+}
+#footer p {
+  font-size: 1em;
+  text-align: center;
+  color: #EBEBEB;
+  line-height: 4rem;
 }
 
 html {
@@ -516,4 +558,19 @@ body {
   max-width: 120rem;
   width: 100%;
   background-color: #060112;
+  border: 3px solid red;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #252233;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #252233;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C28FF;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

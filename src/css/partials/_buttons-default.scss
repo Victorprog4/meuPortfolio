@@ -2,8 +2,8 @@
   background: linear-gradient(263.03deg, #2c28ff 19.65%, #100da6 100.89%);
   transition: 0.5s;
   border: none;
-  padding: 0.8rem 3.4rem;
-  border-radius: 6px;
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.37rem;
   cursor: pointer;
 
   a {
@@ -15,7 +15,7 @@
     transition: 0.5s;
 
     i {
-      margin-left: 16px;
+      margin-left: 1rem;
     }
   }
 
@@ -30,22 +30,22 @@
 
 .--button-secundary {
   background: transparent;
-  border: 5px solid #100da6;
+  border: 3px solid #100da6;
   transition: 0.5s;
-  padding: 0.6rem 2.6rem;
-  border-radius: 6px;
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.37rem;
   cursor: pointer;
 
   a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
     color: #ebebeb;
     opacity: 0.7;
     transition: 0.5s;
 
     i {
-      margin-left: 16px;
+      margin-left: 1rem;
     }
   }
 
