@@ -8,13 +8,13 @@
   margin-bottom: 4.8rem;
 
   h1 {
-    font-size: 64px;
+    font-size: 4em;
     color: white;
     line-height: 108%;
   }
   h4 {
     margin-bottom: 2.2rem;
-    font-size: 38px;
+    font-size: 2.37em;
     color: white;
     font-weight: 100;
     letter-spacing: .1rem;
@@ -30,6 +30,7 @@
   }
 
   .home-image {
+    width: 37.5rem;
     //border: 1px solid yellow;
     display: flex;
     align-items: center;
@@ -39,11 +40,11 @@
   @media (max-width: 1440px) {
     padding: 0 84px;
     h1 {
-      font-size: 56px;
+      font-size: 3.5em;
       line-height: 100%;
     }
     h4 {
-      font-size: 32px;
+      font-size: 2em;
     }
 
     .home-itens {

@@ -16,18 +16,18 @@
       text-decoration: none;
       position: relative;
       color: #cecece;
-      font-size: 28px;
+      font-size: 1.75em;
       margin: 0 32px;
       transition: 0.5s ease-in;
 
       &::after {
         content: " ";
         width: 0;
-        height: 5px;
+        height: 3px;
         border-radius: 15px;
         background: linear-gradient(90deg, #020082 12.56%, #2b27ed 100%);
         position: absolute;
-        bottom: -6px;
+        bottom: -4px;
         left: 0;
         transition: 0.5s ease-in-out;
       }
