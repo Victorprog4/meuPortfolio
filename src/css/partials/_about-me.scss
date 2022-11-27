@@ -79,3 +79,44 @@
     }
   }
 }
+
+
+ @media only screen and (max-width: 1044px) {
+  .title {
+  grid-area: title;
+  h1 {
+    font-size: 2.4em;
+    background: radial-gradient(
+      108.78% 2341.11% at 110% 13.4%,
+      #060112 0%,
+      #ffffff 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+  }
+}
+
+.describe {
+  grid-area: Photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: .8em;
+    text-align: start;
+    color: #ebebeb;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+  }
+}
+
+.Button {
+  button {
+    padding: .4rem 1.4rem;;
+  }
+}
+ }

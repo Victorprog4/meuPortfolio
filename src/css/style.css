@@ -108,6 +108,31 @@ h4, a, span, p {
     margin-right: 1.2rem;
   }
 }
+@media only screen and (max-width: 1044px) {
+  .home {
+    padding: 0 5.25rem;
+    width: 100%;
+    height: 100%;
+    margin: 1.8rem 0 0 0;
+  }
+  .home h1 {
+    font-size: 2.4em;
+    line-height: 100%;
+  }
+  .home h4 {
+    font-size: 1.4em;
+  }
+  .home .home-itens button {
+    margin-right: 0.2rem;
+  }
+  .home .home-image {
+    width: 22rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
 
 .--button-primary {
   background: linear-gradient(263.03deg, #2c28ff 19.65%, #100da6 100.89%);
@@ -181,7 +206,7 @@ h4, a, span, p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 800px;
   width: 50%;
 }
 .projects .describe-project h4 {
@@ -216,7 +241,7 @@ h4, a, span, p {
 }
 .projects .image-project {
   display: flex;
-  height: 800px;
+  height: 400px;
   justify-content: center;
   align-items: center;
   background-color: #060112;
@@ -239,6 +264,48 @@ h4, a, span, p {
   }
   .projects .describe-project button {
     margin: 3rem 0 0 1.4rem;
+  }
+}
+@media only screen and (max-width: 1044px) {
+  .projects {
+    padding: 0 64px;
+  }
+  .projects .describe-project {
+    width: 60%;
+    height: 500px;
+    top: 0.4rem;
+  }
+  .projects .describe-project h4 {
+    font-size: 1.4em;
+  }
+  .projects .describe-project p {
+    font-size: 0.7em;
+  }
+  .projects .describe-project button {
+    margin: 3rem 0 0 0.1rem;
+    padding: 0.4rem 1.4rem;
+  }
+  .projects .icons {
+    width: 100%;
+    text-align: center;
+  }
+  .projects .icons i {
+    color: #303030;
+    font-size: 1.5em;
+    margin: 0.6rem;
+  }
+  .projects .image-project {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: #060112;
+    width: 50%;
+  }
+  .projects .image-project h1 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -597,6 +664,36 @@ h4, a, span, p {
   transform: scale(1.04);
 }
 
+@media only screen and (max-width: 1044px) {
+  .title {
+    grid-area: title;
+  }
+  .title h1 {
+    font-size: 2.4em;
+    background: radial-gradient(108.78% 2341.11% at 110% 13.4%, #060112 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+  }
+  .describe {
+    grid-area: Photo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .describe p {
+    font-size: 0.8em;
+    text-align: start;
+    color: #ebebeb;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+  }
+  .Button button {
+    padding: 0.4rem 1.4rem;
+  }
+}
 #footer {
   width: 100%;
   display: flex;
