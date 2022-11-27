@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="icon" href="./src/img/icon-head.svg" type="icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./src/js/svg-inject.min.js"></script>
     <script
       src="https://kit.fontawesome.com/6feae3469a.js"
@@ -59,6 +60,7 @@
           />
         </div>
       </section>
+
       <section id="section-projetos">
         <div class="projects">
           <div class="describe-project">
@@ -160,7 +162,7 @@
       </section>
 
       <section class="skills" id="section-skills">
-        <h1>HABILIDADES</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000">HABILIDADES</h1>
         <div>
           <img
             src="./src/img/ANIME-ICONS-SKILLS.svg"
@@ -172,14 +174,19 @@
       </section>
 
       <section class="about-me">
-        <div class="title">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
           <span></span>
           <h1>Sobre mim</h1>
         </div>
-        <div class="Photo">
-          <img src="./src/img/Photo-about-me.svg" alt="foto do meu avatar" onload="SVGInject(this)"/>
+        <div class="Photo" data-aos="fade-up" data-aos-duration="1400">
+          <img
+            src="./src/img/Photo-about-me.svg"
+            alt="foto do meu avatar"
+            onload="SVGInject(this)"
+            loading="lazy"
+          />
         </div>
-        <div class="describe">
+        <div class="describe" data-aos="fade-up" data-aos-duration="1800">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -189,7 +196,7 @@
             remaining essentially uncha
           </p>
         </div>
-        <div class="Button">
+        <div class="Button" data-aos="fade-up" data-aos-duration="1800">
           <button type="button" class="btn --button-secundary">
             <a href="#" target="_blank"
               >Download CV<i class="fa-solid fa-download"></i
@@ -197,10 +204,10 @@
           </button>
         </div>
         <div class="Contact-me">
-          <a href="#"><i class="fa-regular fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a
-          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-regular fa-envelope" data-aos="fade-up" data-aos-duration="1000"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp" data-aos="fade-up" data-aos-duration="1400"></i></a
+          ><a href="#"><i class="fa-brands fa-linkedin-in" data-aos="fade-up" data-aos-duration="1800"></i></a>
+          <a href="#"><i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="2200"></i></a>
         </div>
       </section>
 
@@ -209,5 +216,9 @@
       </footer>
     </main>
     <script src="./src/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

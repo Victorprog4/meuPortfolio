@@ -5,7 +5,6 @@
   height: 88px;
   justify-content: space-between;
   align-items: center;
- // border: 1px solid red;
   padding: 0 9rem;
 
   #nav-links {
@@ -41,7 +40,7 @@
   }
 
   @media (max-width: 1440px) {
-    padding: 0 5.25rem;
+    padding: 1rem 5.25rem;
 
     #nav-links {
       a {
