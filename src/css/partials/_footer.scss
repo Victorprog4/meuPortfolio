@@ -1,10 +1,11 @@
 #footer {
     width: 100%;
     display: flex;
+    margin-top: 3.8rem;
     height: 4rem;
     justify-content: center;
-    border-top: 1px solid #777777;
     background-color: #060112;
+    border-top: 1px solid rgba(116, 116, 116, 0.1);
     box-shadow: 0px -65px 98px 5px #060112;
 
     p {

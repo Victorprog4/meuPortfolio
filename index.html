@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="icon" href="./src/img/icon-head.svg" type="icon">
+    <link rel="icon" href="./src/img/icon-head.svg" type="icon" />
     <script src="./src/js/svg-inject.min.js"></script>
     <script
       src="https://kit.fontawesome.com/6feae3469a.js"
@@ -54,7 +54,7 @@
         <div class="home-image">
           <img
             src="./src/img/img-home.svg"
-            alt="logo"
+            alt="minha logo"
             onload="SVGInject(this)"
           />
         </div>
@@ -172,25 +172,35 @@
       </section>
 
       <section class="about-me">
-        <div class="photo">
-          <img src="./src/img/my-photo.svg" alt="" />
+        <div class="title">
+          <span></span>
+          <h1>Sobre mim</h1>
         </div>
-        <div class="my-description">
+        <div class="Photo">
+          <img src="./src/img/Photo-about-me.svg" alt="foto do meu avatar" onload="SVGInject(this)"/>
+        </div>
+        <div class="describe">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
+            remaining essentially uncha
           </p>
-          <div>
-            <button type="button" class="btn --button-secundary">
-              <a href="#" target="_blank"
-                >Download CV<i class="fa-solid fa-download"></i
-              ></a>
-            </button>
-          </div>
+        </div>
+        <div class="Button">
+          <button type="button" class="btn --button-secundary">
+            <a href="#" target="_blank"
+              >Download CV<i class="fa-solid fa-download"></i
+            ></a>
+          </button>
+        </div>
+        <div class="Contact-me">
+          <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a
+          ><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
       </section>
 

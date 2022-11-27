@@ -462,6 +462,30 @@ h4, a, span, p {
     stroke-dasharray: 80;
   }
 }
+.circulo-giratorio {
+  opacity: 1;
+  transform-origin: center center;
+  -webkit-animation: gira-circulo 30s ease infinite forwards;
+          animation: gira-circulo 30s ease infinite forwards;
+}
+
+@-webkit-keyframes gira-circulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gira-circulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -472,20 +496,26 @@ h4, a, span, p {
   width: 100%;
   height: 100%;
   padding: 0 84px;
-  margin: 12rem 0;
+  margin: 6rem 0;
   background-color: #060112;
 }
 .skills h1 {
   font-size: 4em;
-  text-align: center;
-  color: white;
-  margin: 3.2rem 0;
-  font-weight: 600;
+  background: radial-gradient(108.78% 2341.11% at 110% 13.4%, #060112 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3.8rem;
+  text-transform: uppercase;
+}
+.skills .img-skills {
+  max-width: 1200px;
+  width: 100%;
+  height: inherit;
 }
 @media (max-width: 1440px) {
   .skills h1 {
     font-size: 3.5em;
-    margin: 1.2rem 0;
   }
   .skills .img-skills {
     max-width: 1000px;
@@ -494,50 +524,85 @@ h4, a, span, p {
 }
 
 .about-me {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   padding: 0 9rem;
-  margin: 4.8rem 0;
-  border: 1px solid red;
+  grid-template-columns: 1.4fr 0.6fr 1fr;
+  grid-template-rows: 0.4fr 2.1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "title . ." "Photo . describe" "Contact-me . Button";
 }
-.about-me .photo {
-  width: 100%;
+
+.title {
+  grid-area: title;
+}
+.title h1 {
+  font-size: 4em;
+  background: radial-gradient(108.78% 2341.11% at 110% 13.4%, #060112 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.Photo {
+  grid-area: describe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.describe {
+  grid-area: Photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.describe p {
+  font-size: 1.2em;
+  text-align: start;
+  color: #ebebeb;
+  letter-spacing: 0.05em;
+  line-height: 140%;
+}
+
+.Button {
+  grid-area: Contact-me;
+  margin-top: 1rem;
+  display: flex;
   justify-content: flex-start;
-  border: 1px solid rgb(30, 0, 255);
 }
-.about-me .my-description {
-  width: 100%;
-  height: 100%;
+
+.Contact-me {
+  grid-area: Button;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid rgb(30, 255, 0);
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
 }
-.about-me .my-description p {
-  font-size: 1em;
-  letter-spacing: 0.08rem;
-  text-align: right;
-  color: white;
+.Contact-me i {
+  font-size: 2em;
+  color: #ebebeb;
+  opacity: 0.8;
+  margin: 0 1.4rem;
+  transition: 0.3s;
 }
-.about-me .my-description div {
-  margin-top: 2.8rem;
-  display: flex;
-  justify-content: end;
-}
-.about-me .my-description div button {
-  padding: 0.4rem 1.2rem;
+.Contact-me i:hover {
+  color: #120fbb;
+  opacity: 1;
+  text-shadow: 0px 0px 15px rgba(18, 15, 187, 0.6);
+  transform: scale(1.04);
 }
 
 #footer {
   width: 100%;
   display: flex;
+  margin-top: 3.8rem;
   height: 4rem;
   justify-content: center;
-  border-top: 1px solid #777777;
   background-color: #060112;
+  border-top: 1px solid rgba(116, 116, 116, 0.1);
   box-shadow: 0px -65px 98px 5px #060112;
 }
 #footer p {
@@ -549,16 +614,13 @@ h4, a, span, p {
 
 html {
   scroll-behavior: smooth;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
   max-width: 120rem;
   width: 100%;
+  margin: 0 auto;
   background-color: #060112;
-  border: 3px solid red;
 }
 
 ::-webkit-scrollbar-track {

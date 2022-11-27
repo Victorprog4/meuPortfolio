@@ -16,16 +16,14 @@
 
 html {
     scroll-behavior: smooth;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 body{
     max-width: 120rem;
     width: 100%;
+    margin: 0 auto;
     background-color: #060112;
-    border: 3px solid red;
+    //border: 3px solid red;
 }
 
 ::-webkit-scrollbar-track{
