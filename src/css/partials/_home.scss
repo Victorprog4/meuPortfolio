@@ -17,7 +17,7 @@
     font-size: 2.37em;
     color: white;
     font-weight: 100;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
 
   .home-itens {
@@ -35,6 +35,7 @@
     justify-content: end;
   }
 
+  //medias query's
   @media (max-width: 1440px) {
     padding: 1rem 5.25rem;
     width: 100%;
@@ -69,17 +70,101 @@
 
     .home-itens {
       button {
-        margin-right: .2rem;
+        margin-right: 0.2rem;
       }
     }
     .home-image {
-    width: 22rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
+      width: 22rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
   }
 
-  
+  @media only screen and (max-width: 768px) {
+    padding: 0 3.5rem;
+    width: 100%;
+    height: 100%;
+    margin: 2.8rem 0 0 0;
+    h1 {
+      font-size: 2em;
+    }
+    h4 {
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+    }
+
+    .home-itens {
+      button {
+        margin-right: 0.6rem;
+        margin-top: 1.8rem;
+        padding: 0.4rem 0.6rem;
+        border-radius: 0.27em;
+
+        a {
+          text-decoration: none;
+          font-size: 1em;
+          font-weight: 400;
+          color: #ebebeb;
+          opacity: 0.7;
+          transition: 0.5s;
+
+          i {
+            margin-left: .6rem;
+          }
+        }
+      }
+    }
+    .home-image {
+      width: 18rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+  }
+
+  @media only screen and (max-width: 428px) {
+    padding: 0 1.2rem;
+    width: 100%;
+    height: 100%;
+    margin: .8rem 0 0 0;
+    h1 {
+      font-size: 1.2em;
+    }
+    h4 {
+      font-size: .5em;
+      margin-bottom: 1rem;
+    }
+
+    .home-itens {
+      button {
+        margin-right: 0.2rem;
+        margin-top: 1.8rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.27em;
+
+        a {
+          text-decoration: none;
+          font-size: .8em;
+          font-weight: 400;
+          color: #ebebeb;
+          opacity: 0.7;
+          transition: 0.5s;
+
+          i {
+            margin-left: .6rem;
+          }
+        }
+      }
+    }
+    .home-image {
+      width: 10.5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+  }
 }
